@@ -1,0 +1,72 @@
+{
+  "checkpoints": [
+    {
+      "artifact": "checkpoints/ablation_16ep_seed2027.pth",
+      "source_sha256": "479d94c358f6dc7d54762ab61f1ffd47c9d80a5ef71245ac52309f18bd29fe2e",
+      "export_sha256": "7e148b96686eed98f51993831aa38bcedeb18650629c5e49a9e2af4084a97f38",
+      "lambda_joint": 0.1
+    },
+    {
+      "artifact": "checkpoints/ablation_16ep_seed2028.pth",
+      "source_sha256": "f18c208c94db05db1658ca775c5b80f90ce7b46a5666e3a8946a42df4ca1e23b",
+      "export_sha256": "62a38258a0e07e2a78118158898c8058a6b291c2122524b8bfdcaeb1082e2d2d",
+      "lambda_joint": 0.1
+    },
+    {
+      "artifact": "checkpoints/ablation_16ep_seed2029.pth",
+      "source_sha256": "93a98b530e65e806870811d21df583db264252ef2dffb3a344d2fedcd75aa7c3",
+      "export_sha256": "31712d4ca04d6e7723d9eabb3a69522b85d4fe7a55402b9d59f87a6522648bca",
+      "lambda_joint": 0.1
+    },
+    {
+      "artifact": "checkpoints/assignment_expert.pth",
+      "source_sha256": "a0e0d206d7ac347499309659d935cc90bf17660a2a10fcf8498e9cfb2148767d",
+      "export_sha256": "7ff0eeb50630b55e1477d3712ac93c8b7b6cc8026a6046a0e4bd9b4a6b6843f1",
+      "lambda_joint": null
+    },
+    {
+      "artifact": "checkpoints/final_dual_seed2027.pth",
+      "source_sha256": "ff157dd069e65fc7828061462d4c910a89a4f3735ebc5417092ddacf6042dc50",
+      "export_sha256": "3aec0ce9a38b465099d5d329d4f6820fd0bd8a3f78767ddc1a585150040d554b",
+      "lambda_joint": 0.1
+    },
+    {
+      "artifact": "checkpoints/final_dual_seed2028.pth",
+      "source_sha256": "272fec7aba609fc7fbce0ee8cb0abb16c25912ec8811626bd9e88f6c38deaa05",
+      "export_sha256": "e568b9e776b93e830d33a7dcfac5086fc7aa20dfe6b74033f1c1a7421dd5b8ca",
+      "lambda_joint": 0.1
+    },
+    {
+      "artifact": "checkpoints/final_dual_seed2029.pth",
+      "source_sha256": "bf95112c224de1b04e768d048799475db8e2f704004319e6da4f699bcaf4bdf9",
+      "export_sha256": "d4d45934a23b607bb544622465c4c5f4b8918d679bd50ffa67a2cfcce5ec5850",
+      "lambda_joint": 0.1
+    }
+  ],
+  "features": "fixed original cached evidence, unchanged float32 feature blocks",
+  "reference_predictions": {
+    "denseav": {
+      "source_sha256": "2bacfa2d359b593405ee1be5c28e4d1c00d5f86be1020b5c530513527293a5d7",
+      "mode": "original archived per-image scores"
+    },
+    "soft_dice": {
+      "source_sha256": "e48b6add42170b472345b2615877d559487853a4f0d75087fdf1d921e1b405c2",
+      "mode": "original archived scores"
+    },
+    "learned_heads": {
+      "mode": "16-epoch original-implementation replay on CUDA; matches published tables at displayed precision",
+      "torch_version": "2.12.0.dev20260408+cu128",
+      "numpy_version": "2.5.2"
+    },
+    "log_rms": {
+      "mode": "recomputed from original 600 prepared waveforms, matched UID order",
+      "definition": "-log10(sqrt(mean(waveform**2)) + 1e-12)"
+    }
+  },
+  "extended_release": {
+    "date": "2026-09-07",
+    "architecture_controls": "Original CUDA 16-epoch, unit-Brier reference recipe replayed for three seeds; per-output scores saved.",
+    "transfer_features": "Read-only export of original AVSegFormer-R50 fit and confirmation records; no backbone weights included.",
+    "transfer_reference": "Original 16-epoch dual-head recipe replayed on CUDA; displayed metrics match the manuscript."
+  }
+}

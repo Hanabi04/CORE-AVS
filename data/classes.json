@@ -1,0 +1,27 @@
+{
+  "index_base": 0,
+  "classes": [
+    "airplane",
+    "baby",
+    "bird",
+    "bus",
+    "car",
+    "cat",
+    "cell phone",
+    "cow",
+    "dog",
+    "elephant",
+    "female",
+    "horse",
+    "keyboard",
+    "male",
+    "motorcycle",
+    "mouse",
+    "sheep",
+    "skateboard",
+    "sports ball",
+    "tennis racket",
+    "zebra"
+  ],
+  "background_is_not_a_token": true
+}

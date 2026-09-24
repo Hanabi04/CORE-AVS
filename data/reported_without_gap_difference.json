@@ -1,0 +1,8 @@
+{
+  "source_sha256": "8574b8767c79100e429f7c79c3c5eb8db82d205c077a483dad169a79bbc60592",
+  "kind": "archived reported metrics; not re-evaluated predictions",
+  "AURC": 0.649796715214394,
+  "J80": 0.2566598951816559,
+  "AUROC-S": 0.973375,
+  "AUROC-M": 0.77745
+}

@@ -1,0 +1,13 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the accompanying paper."
+type: software
+title: "Looks Right, Sounds Wrong: Counterfactual Reliability for Static Multi-Source Audio-Visual Segmentation"
+authors:
+  - family-names: "Jin"
+    given-names: "Zelin"
+  - family-names: "He"
+    given-names: "Guorui"
+  - family-names: "Fan"
+    given-names: "Jiabin"
+repository-code: "https://github.com/Hanabi04/CORE-AVS"
+license: MIT
